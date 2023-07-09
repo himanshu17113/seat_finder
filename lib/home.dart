@@ -72,10 +72,11 @@ class _MyHomePageState extends State<MyHomePage> {
             child: Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
+        Spacer(),
         const Expanded(
-          flex: 2,
+          flex: 1,
           child: Align(
-            alignment: Alignment.bottomLeft,
+            alignment: Alignment.centerLeft,
             child: Text(
               '  Seat Finder',
               textAlign: TextAlign.right,
@@ -87,6 +88,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
           ),
         ),
+        //  Spacer(),
         Expanded(
             flex: 1,
             child: Padding(
