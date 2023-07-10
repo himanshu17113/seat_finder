@@ -72,7 +72,7 @@ class _MyHomePageState extends State<MyHomePage> {
             child: Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        Spacer(),
+        const Spacer(),
         const Expanded(
           flex: 1,
           child: Align(
@@ -134,7 +134,6 @@ class _MyHomePageState extends State<MyHomePage> {
                     pos = null;
                     issideselected = false;
                     int? i = int.tryParse(searchController.text);
-
                     if (searchController.text.isNotEmpty && i != null) {
                       if (i % 8 == 0 || (i + 1) % 8 == 0) {
                         setState(() {
@@ -174,7 +173,6 @@ class _MyHomePageState extends State<MyHomePage> {
           flex: 12,
           child: ListView.builder(
             itemBuilder: (context, index) {
-              debugPrint(index.toString());
               if (indx != null && index + 1 == indx) {
                 return Row(
                   crossAxisAlignment: CrossAxisAlignment.end,
